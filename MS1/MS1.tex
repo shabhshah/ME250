@@ -18,14 +18,116 @@
 \usepackage{enumitem}
 
 %Math symbols
-%\usepackage{gensymb}
+\usepackage{gensymb}
 
 \begin{document}
 
-Rishabh Shah
+\noindent Rishabh Shah
 
-September 13, 2017
+\noindent September 13, 2017
 
-Section 010
+\noindent Section 010 
+
+\noindent UM ID 4655 4192 \\
+
+To win the Game of Zones, our squad needs to score the most amount of points. The only way to achieve this is to have our four Robotic Machine Players (RMPs) have specialized jobs. RMP 1 will begin by moving across the gravel field, heading to Zone 4. Once reaching Zone 4, the RMP will have to lower the drawbridge to allow access to Zone 4 from Zone 1. This will allow the other RMPs to reach Goal 2. RMP 3 will begin by crossing the Pyramid in Zone 1 and making its way to the southwest corner of the table to pick up the yellow cubes. The yellow cubes should be the primary target for our squad, as they are replenished and are located conveniently with regards to both Goal 1 and Goal 2. Once lifting all six yellow cubes, RMP 3 will transport them to Goal 2 and deposit them into the basket. It will then return to the southwest corner and retrieve the next batch of yellow cubes. RMP 4 will begin in Zone 2, and will collect the red cubes from the Bell Tower, travel over the Seesaw to Zone 1, then cross the Pyramid, eventually dropping the cubes off at Goal 2. RMP 2 will begin by collecting the cubes in the northwest corner of the table, and then will follow the same path as RMP 4 to Goal 2.
+
+According to the strategy outlined above, RMPs 2, 3, and 4 will need to have a way of lifting and transporting cubes from their respective zones to Goal 2. The main priority of the RMPs is to have RMP 1 ensure the drawbridge is let down, and that RMP 3 focuses exclusively on putting the yellow cubes in Goal 2, as that will yield the highest amount of points. There are a larger amount of cubes in Zone 2, and that is why my strategy calls for two RMPs to start the Game of Zones in Zone 2. Ideally, using this strategy all of the cubes from Zone 2 will be able to collected. The biggest dependency is on RMP 1. If the drawbridge is lowered then the other RMPs will be stuck at the drawbridge until it is lowered. The strengths of this strategy is that ensures that the cubes are placed in the higher scoring goal, and that the yellow cubes are the priority as they are replenished. Another strength is that the RMPs are independent after the drawbridge is lowered, which results in no dependencies if a RMP fails or is not able to complete its task.
+
+\begin{enumerate}
+	\item Risk 1: If RMP 1 cannot get the drawbridge down.
+	\begin{enumerate}
+		\item If RMP 1 cannot get the drawbridge down, the backup plan is for RMPs 2, 3, and 4 to divert to Goal 1. This is easily achieved either by lifting the cubes over the wall, or by traveling over the Seesaw to Zone 2, where Goal 1 is accessible.
+	\end{enumerate}
+	\item Risk 2: If RMP 3 cannot pick up and transport the yellow cubes before they are replenished.
+	\begin{enumerate}
+		\item If RMP 3 cannot pick up and transport the yellow cubes before they are replenished, then RMP 2 will be required to cross the Seesaw and assist RMP 3 with its task of transporting the yellow cubes, as these are the highest priority.
+	\end{enumerate}
+	\item Risk 3: If RMP 2 knocks the cubes off the edge of the table.
+	\begin{enumerate}
+		\item If RMP 2 knocks the cubes off the edge of the table, those cubes are impossible to reach. RMP 2 will have to assist RMP 3 with the yellow cubes, again because of its high priority.
+	\end{enumerate}
+\end{enumerate}
+
+\newpage
+\noindent\underline{Expected Score:}
+
+\noindent Best Outcome:
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+	\setlength\itemsep{0em}
+	\item Drawbridge is lowered
+	\item All RMPs place their cubes into Goal 2 \\
+\end{enumerate}
+
+\begin{tabular}{ | l | l | l | l | l | l | l |}
+	\hline
+	Goal & \multicolumn{3}{ | c |}{Low Goal (1x)} & \multicolumn{3}{ | c |}{High Goal (3x)} \\
+	\hline
+	Cube & Green (1pt) & Yellow (2pt) & Red (3pt) & Green (1pt) & Yellow (2pt) & Red (3pt) \\
+	\hline
+	Number of Cubes & 0 & 0 & 0 & 8 & 18 & 5 \\
+	\hline
+	Score & 0 & 0 & 0 & 24 & 108 & 45 \\
+	\hline
+	Drawbridge & \multicolumn{6}{ | l |}{Yes} \\
+	\hline
+	Total Score & \multicolumn{6}{ | l |}{$24 + 108 + 45 + 10 = 187$} \\
+	\hline
+\end{tabular} \\
+
+\hfill \break
+\noindent Average Outcome:
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+	\setlength\itemsep{0em}
+	\item Drawbridge is lowered
+	\item RMP 3 is only able to transport half of the yellow cubes
+	\item RMP 2 is only able to transport half of the green cubes
+	\item RMP 4 is only able to transport half of the red cubes \\
+\end{enumerate}
+
+\begin{tabular}{ | l | l | l | l | l | l | l |}
+	\hline
+	Goal & \multicolumn{3}{ | c |}{Low Goal (1x)} & \multicolumn{3}{ | c |}{High Goal (3x)} \\
+	\hline
+	Cube & Green (1pt) & Yellow (2pt) & Red (3pt) & Green (1pt) & Yellow (2pt) & Red (3pt) \\
+	\hline
+	Number of Cubes & 0 & 0 & 0 & 4 & 9 & 2 \\
+	\hline
+	Score & 0 & 0 & 0 & 12 & 54 & 18 \\
+	\hline
+	Drawbridge & \multicolumn{6}{ | l |}{Yes} \\
+	\hline
+	Total Score & \multicolumn{6}{ | l |}{$12 + 54 + 18 + 10 = 94$} \\
+	\hline
+\end{tabular} \\
+
+\hfill \break
+\noindent Worst Outcome:
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+	\setlength\itemsep{0em}
+	\item Drawbridge is not lowered
+	\item RMP 3 is not able to transport any yellow cubes
+	\item RMP 2 is only able to transport two green cubes to Goal 1
+	\item RMP 4 is not able to transport any red cubes \\
+\end{enumerate}
+
+\begin{tabular}{ | l | l | l | l | l | l | l |}
+	\hline
+	Goal & \multicolumn{3}{ | c |}{Low Goal (1x)} & \multicolumn{3}{ | c |}{High Goal (3x)} \\
+	\hline
+	Cube & Green (1pt) & Yellow (2pt) & Red (3pt) & Green (1pt) & Yellow (2pt) & Red (3pt) \\
+	\hline
+	Number of Cubes & 2 & 0 & 0 & 0 & 0 & 0 \\
+	\hline
+	Score & 2 & 0 & 0 & 0 & 0 & 0 \\
+	\hline
+	Drawbridge & \multicolumn{6}{ | l |}{No} \\
+	\hline
+	Total Score & \multicolumn{6}{ | l |}{$2$} \\
+	\hline
+\end{tabular} \\
+
+$Expected Score = s_{best} \times p_{best} + s_{average} \times p_{average} + s_{worst} \times p_{worst}$
+$Expected Score = 187 \times 0.2 + 94 \times 0.5 + 0.3 \times 0.3 = 84.49$
 
 \end{document}
